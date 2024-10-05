@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif; /* Вказуємо шрифт */
+    font-weight: 400; /* Вага шрифту */
+    font-size: 18px; /* Розмір шрифту */
+    line-height: 24.51px; /* Висота рядка */
+    letter-spacing: 0.02em; /* Відстань між літерами (2%) */
+}
+ul {
+    list-style-type: none; /* Убирає маркери */
+    padding: 0; /* Убирає відступи */
+    margin: 0; /* Убирає поля */
+}
+h1{
+    font-weight: 700; /* Вага шрифту */
+    font-size: 48px; /* Розмір шрифту */
+    line-height: 65.37px; /* Висота рядка */
+        
+}
+h2 {
+    font-family: 'Open Sans', sans-serif; /* Встановлюємо шрифт */
+    font-weight: 700; /* Вага шрифту */
+    font-size: 34px; /* Розмір шрифту */
+    line-height: 46.3px; /* Висота рядка */
+    text-align: center; /* Вирівнювання тексту по центру */
+    margin: 0;
+}
+p{
+    text-align: center;
+}
+figcaption{
+    text-align: center;
+    margin-top: 1em;
+}
+figure {
+    display: flex; /* Використання flexbox для центрування */
+    flex-direction: column; /* Розташування зображення та підпису вертикально */
+    align-items: center; /* Вирівнювання вмісту по горизонталі */
+    justify-content: center; /* Вирівнювання по вертикалі */
+    text-align: center; /* Вирівнювання тексту підпису по центру */
+    margin: 20px; /* Відступ навколо елементу figure */
+}
+.nav{
+    position: relative;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.nav::before {
+    content: ""; /* Псевдоелемент не має вмісту */
+    position: absolute; /* Абсолютне позиціонування */
+    bottom: 0; /* Відстань знизу */
+    left: 50%; /* Зсув вліво на 50% від ширини контейнера */
+    transform: translateX(-50%); /* Центрування по горизонталі */
+    width: 970px; /* Ширина рамки 50% */
+    height: 1px; /* Висота рамки */
+    background-color: #828282; /* Колір рамки */
+}
+.nav-list{
+    width: 496px;
+    height: 30px;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.list-item{
+    margin-right: 1em;
+}
+.profile{
+    margin-left: 19.5em;
+}
+.photodenis{
+    width: 970px;
+    height: 387px;
+}
+.about{
+    margin: 0 auto;
+    align-content: center;
+    height: 500px;
+    background: #F6F6F6;
+}
+.block{
+    display: block;
+}
+.skills{
+    align-content: center;
+    height: 564px;
+}
+.skills-icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+   
+}
+.skills-div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5em;
+    justify-content: space-between;
+    height: 14em;
+}
