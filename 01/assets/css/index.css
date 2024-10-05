@@ -1,0 +1,129 @@
+body {
+    font-family: 'Marck Script', cursive;
+    height: 100vh; /* Задає висоту на всю висоту вікна */
+    background-color: #1c0a3e; /* Світлий фон для контрасту */
+    margin: 0;
+    color: rgb(77, 175, 143);
+}
+a{
+    text-decoration: none;
+    background: linear-gradient(90deg, lightblue, lightgreen, lightcoral);
+    background-size: 300%; /* Збільшує розмір фону для анімації */
+    background-clip: text; /* Обрізає фон під текст */
+    color: transparent; /* Робить текст прозорим */
+    animation: moveBackground 5s linear infinite; /* Анімація фону */
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-menu{
+    margin-left: 15em;
+    display: flex;
+    align-items: center;
+}
+.header-menu a{
+    margin-right: 2em;
+}
+
+.nav{
+    display: flex;
+}
+.nav li{
+   list-style: none;
+   align-content: center;
+}
+.profile-title {
+    font-size: 48px; /* Розмір шрифту */
+    font-weight: bold; /* Жирний шрифт */
+    background: linear-gradient(90deg, lightblue, lightgreen, lightcoral);
+    background-size: 300%; /* Збільшує розмір фону для анімації */
+    background-clip: text; /* Обрізає фон під текст */
+    color: transparent; /* Робить текст прозорим */
+    animation: moveBackground 5s linear infinite; /* Анімація фону */
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 50%; /* Початкова позиція */
+    }
+    50%{
+        background-position: 100% 50%; /* Кінцева позиція */
+    }
+
+    100% {
+        background-position: 0% 50%; /* Початкова позиція */
+    }
+
+}
+.telegram{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+}
+.position{
+   margin-left: 22em;
+   margin-bottom: 1em;
+   display: flex;
+   align-items: center;
+}
+.position h2{
+    margin-right: 2em;
+}
+.main-content{
+    display: flex;
+   
+}
+.search-description{
+    width: 45em;
+    margin-left: 2em;
+}
+.search-description div{
+    margin-bottom: 5em;
+}
+.description
+{
+    width: 50em;
+    
+   
+    
+    white-space:nowrap;
+  
+}
+
+.search{
+    display: flex;
+    margin-left: 22em;
+}
+
+.content div{
+    margin-right: 8em;
+}
+.face{
+    max-width: 200px;
+    max-height: auto;
+}
+
+img {
+  width: 300px; /* Можна змінити розмір */
+  max-height: 400px;
+  opacity: 0;
+  animation: pixelFadeIn 3s ease-in-out forwards;
+}
+
+@keyframes pixelFadeIn {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 0.5;
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
