@@ -70,6 +70,10 @@ figure {
     
    
 }
+.nav-list .list-item:nth-child(n + 2) {
+    color:  #828282;
+
+}
 .list-item{
     margin-right: 1em;
 }
@@ -102,7 +106,70 @@ figure {
 .skills-div{
     display: flex;
     flex-direction: column;
-    margin-right: 5em;
+    margin: 0 2.6em;
     justify-content: space-between;
     height: 14em;
+}
+.portfolio{
+    background: #F6F6F6;
+}
+.portfolio h2{
+    margin-bottom: 1em;
+    padding-top: 2em;
+}
+.portfolio figcaption{
+    margin:2em 0 3em 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.51px;
+}
+footer{
+    text-align: center;
+}
+footer p{
+    margin-bottom: 3em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+footer h2{
+    padding-top: 2em;
+    
+}
+button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.51px;
+  text-align: center;
+  margin-bottom: 2em;
+  width: 180px;
+  height: 44px;
+  border-radius: 22px;
+  padding: 0 16px;
+
+  
+  background-color: #000000; 
+  color: #ffffff; 
+
+  border: none; 
+  cursor: pointer; 
+}
+.social-group{
+    width: auto;
+    margin-bottom: 3em;
+}
+.social-group img{
+    width: 40px;
+    height: 40px;
+    margin: 0 25px;
+}
+.social{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.07px;
+    color: #828282;
+  
 }
