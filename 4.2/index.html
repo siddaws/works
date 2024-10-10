@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form02</title>
+</head>
+<body>
+    <section class="first">
+        <div class="container">
+            <form action="#" method="get" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;"
+            > 
+               <fieldset>
+                <legend>Особиста інформація</legend>
+                <div class="form-row">
+                    <label for="username">Ім'я</label>
+                    <input type="text" placeholder="Andrii" name="username" id="username" minlength="2" maxlength="10" size="10" required autocomplete="off">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" required autocomplete="off">
+                </div>
+                <div class="form-row">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" minlength="2" maxlength="10" size="10" required autocomplete="off">
+                </div>
+                <div class="form-row">
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" required>
+                </div>
+               </fieldset>
+               
+               <fieldset>
+                    <legend>Їжа</legend>
+                    <div class="form-row">
+                        <label for="drinks">Drinks</label>
+                        <input type="checkbox" name="drinks" id="drinks">
+                    </div>
+                    
+                    <div class="form-row"> 
+                        <label>
+                            <input type="radio" name="gender" value="man"> Man
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="woman"> Woman
+                        </label>
+                    </div>
+                    
+                    <div class="form-row">
+                        <input type="button" value="Пошук">
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="food">Оберіть їжу</label>
+                        <select name="food" id="food" multiple>
+                            <optgroup label="Фрукти">
+                                <option value="1">Яблуко</option>
+                                <option value="2">Груша</option>
+                                <option value="3">Виноград</option>
+                                <option value="4">Сливка</option>
+                            </optgroup>
+                            <optgroup label="Овочі">
+                                <option value="5">Огірок</option>
+                                <option value="6">Помідор</option>
+                                <option value="7">Морква</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Інформанція про місце</legend>
+                    <div class="form-row">
+                        <label for="description">Коментарі</label>
+                        <textarea name="description" id="description" placeholder="Я буду не сам"></textarea>
+                    </div>
+                    
+                    <div class="form-rows">
+                        <label for="cafe">Оберіть кафе</label>
+                        <input list="cafes" id="cafe" name="cafe" placeholder="Введіть або оберіть">
+                        
+                        <datalist id="cafes">
+                            <option value="Mac">
+                            <option value="Kfc">
+                            <option value="Shaurma">
+                        </datalist>
+                    </div>
+                </fieldset>
+                <button>Відправити</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
