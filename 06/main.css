@@ -49,6 +49,9 @@ header div{
     font-weight: 400;
    padding-top: 0px;
 }
+label span{
+    font-size: 11px;
+}
 input[type='checkbox'] {
     display: block;
    width: 0;
