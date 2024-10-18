@@ -1,0 +1,150 @@
+:root{
+    --staticwidht:291.5px;
+    --double-width: 583px;
+    --triple-width: 1166px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style: none;
+    height: 147px;
+    border: 2px solid white;
+    
+    display: inline-block;
+    width: var(--staticwidht);
+}
+.weather-table-ul{
+    font-size: 0;
+}
+.weather-table:hover{
+   background: #000;
+}
+.weather-table li{
+    font-size: 21px;
+    text-align: center;
+    align-content: center;
+}
+main{
+    border: 25px solid #2B81AC;
+    background: #3399CC;
+    height: 900px;
+    color: #ffffff;
+}
+.container{
+    max-width: min(90%, 1170px);
+    margin-inline: auto;
+    
+}
+.title{
+    padding-top: 40px;
+    
+}
+.title h1{
+    font-size: 21px;
+    margin-bottom: 35px;
+}
+.title h1 i{
+    font-size: 27px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+.weather-table{
+    border: 2px solid white;
+    width: 100%;
+    height: 592px;
+    margin-bottom: 38px;
+}
+
+ul:hover li {
+        opacity: 0.6; 
+        
+}
+
+ul li:first-child,
+ul li:nth-child(9) {
+    width: var(--double-width);
+}
+.weather-table-ul h2{
+    font-size: 22px;
+}
+.weather-table-ul p i{
+    font-size: 42px;
+}
+ul li:last-child {
+    width: var(--triple-width);
+    background: #666699;
+}
+ul li:last-child:hover{
+    opacity: 1;
+}
+ul li:nth-child(1) {
+    background: #3399CC;
+}
+ul li:nth-child(1):hover{
+    opacity: 1;
+}
+
+ul li:nth-child(2) {
+    background: #33CCCC;
+}
+ul li:nth-child(2):hover{
+    opacity: 1;
+}
+
+ul li:nth-child(3) {
+    background: #996699;
+
+}
+ul li:nth-child(3):hover{
+    opacity: 1;
+}
+ul li:nth-child(4) {
+    background: #C24747;
+
+}
+ul li:nth-child(4):hover{
+    opacity: 1;
+}
+ul li:nth-child(5) {
+   background: #E2674A;
+}
+ul li:nth-child(5):hover{
+    opacity: 1;
+}
+ul li:nth-child(6) {
+   background: #FFCC66;
+}
+ul li:nth-child(6):hover{
+    opacity: 1;
+}
+ul li:nth-child(7) {
+    background: #99CC99;
+
+}
+ul li:nth-child(7):hover{
+    opacity: 1;
+}
+ul li:nth-child(8) {
+    background: #669999;
+
+}
+ul li:nth-child(8):hover{
+    opacity: 1;
+}
+ul li:nth-child(9) {
+    background: #CC6699;
+
+}
+ul li:nth-child(9):hover{
+    opacity: 1;
+}
+ul li:nth-child(10) {
+    background: #339966;
+}
+ul li:nth-child(10):hover{
+    opacity: 1;
+}
+

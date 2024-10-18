@@ -7,7 +7,8 @@ ul, ol{
     list-style:none;
 }
 button,a{
-    transform: all 2s all;
+    transition: transform 2s ease;
+    cursor: pointer;
 }
 a{
     text-decoration: none;
@@ -21,6 +22,7 @@ img{
 }
 header{
     padding: 17px 0;
+    margin-bottom: 71px;
 }
 header .container{
     display: flex;
@@ -31,16 +33,59 @@ header .container{
 nav ul{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: 20px;
+    width: 352px;
 }
-button{
-    font-family: "Monteserrat",sans-serif;
+nav ul a{
+    color: #2F281E;
+}
+nav ul a:hover{
+    color: #FF9900;
 }
 .first-section .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 56px;
+    
+}
+.container .content{
+    width: 500px;
+    height: 301px;
+    font-family: "Monteserrat",sans-serif;
+}
+.content h1{
+    font-size: 44px;
+   
+    margin-bottom: 43px;
+}
+.content p{
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 67px;
+    color: #544837;
+}
+.btn{
+    font-family: "Monteserrat",sans-serif;
+    padding: 13px 25px;
+    font-weight: 700;
+    font-size: 16px;
+    background: #FF9900;
+    border-radius:4px ;
+    color: white;
+    border: none;
+}
+.btn-white{
+    background: #ffffff;
+    color: black;
+    margin-right: 30px;
+    border: 1px solid black;
+    padding: 12px 24px
+}
+.btn-width{
+    padding: 15px 48px;
+    
+    
 }
 
