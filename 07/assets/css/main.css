@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: content-box;
+}
+ul, ol{
+    list-style:none;
+}
+button,a{
+    transform: all 2s all;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: min(90%, 1200px) ;
+    margin-inline: auto;
+}
+img{
+    vertical-align: top;
+}
+header{
+    padding: 17px 0;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+button{
+    font-family: "Monteserrat",sans-serif;
+}
+.first-section .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 56px;
+}
+

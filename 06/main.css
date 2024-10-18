@@ -7,6 +7,9 @@ html{
     font-family: 'Roboto', sans-serif;
     line-height: 28.13px;       
 }
+ul, li{
+    list-style: none;
+}
 main{
     margin-inline: auto;
     max-width: 793px;
@@ -51,6 +54,8 @@ header div{
 }
 label span{
     font-size: 11px;
+    transform: translate(2px, -6px);
+    align-self: end;
 }
 input[type='checkbox'] {
     display: block;
