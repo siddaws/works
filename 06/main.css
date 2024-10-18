@@ -9,6 +9,10 @@ html{
 }
 ul, li{
     list-style: none;
+    
+}
+li::marker {
+    content: '';
 }
 main{
     margin-inline: auto;
