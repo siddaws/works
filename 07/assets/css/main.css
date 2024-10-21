@@ -6,6 +6,9 @@
 ul, ol{
     list-style:none;
 }
+a{
+    text-decoration: none;
+}
 button,a{
     transition: transform 2s ease;
     cursor: pointer;
@@ -14,6 +17,7 @@ a{
     text-decoration: none;
 }
 .container{
+    font-family: "Monteserrat",sans-serif;
     max-width: min(90%, 1200px) ;
     margin-inline: auto;
 }
@@ -43,6 +47,9 @@ nav ul a{
 nav ul a:hover{
     color: #FF9900;
 }
+.first-section{
+    margin-bottom: 100px;
+}
 .first-section .container{
     display: flex;
     justify-content: space-between;
@@ -52,8 +59,8 @@ nav ul a:hover{
 }
 .container .content{
     width: 500px;
-    height: 301px;
-    font-family: "Monteserrat",sans-serif;
+    
+    
 }
 .content h1{
     font-size: 44px;
@@ -67,7 +74,7 @@ nav ul a:hover{
     color: #544837;
 }
 .btn{
-    font-family: "Monteserrat",sans-serif;
+    
     padding: 13px 25px;
     font-weight: 700;
     font-size: 16px;
@@ -88,4 +95,108 @@ nav ul a:hover{
     
     
 }
+.features-section{
+    text-align: center;
+    padding-bottom: 78px;
+    background-image: url('../img/bg.svg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+   
+}
+.features-section__h2{
+    margin-inline: auto;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    max-width: 460px;
+    
+}
+.list-features{
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin-bottom: 70px;
+    
+}
+.list-features li{
+    width: 270px;
+}
+.features-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    align-content: center;
+}
+.tools-block{
+    text-align: left;
+}
 
+.tools-block h3{
+    margin-bottom: 16px;
+    font-size: 22px;
+}
+.tools-block h3 + div{
+    font-size: 16px;
+    color: rgba(84, 72, 55, 1);
+
+}
+.features-icon.violet{
+    background: #7752BE;
+}
+.features-icon.yellow{
+    background: yellow;
+}
+.features-icon.red{
+    background: red;
+}
+.features-icon.blue{
+    background: blue;
+}
+.sign{
+    margin-inline: auto;
+    margin-bottom: 108px;
+}
+
+.container__div{
+    display: flex;
+    justify-content: space-between;
+}
+.container__div h4{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.container__div a{
+    font-size: 16px;
+    color: rgba(84, 72, 55, 1);
+
+}
+.links li{
+    margin-bottom: 15px;
+}
+.form-container{
+    width: 340px;
+}
+.form-container h4{
+    max-width: 280px;
+    margin-bottom: 25px;
+}
+.footer__btn{
+    width: 100px;
+    padding: 13px 40px;
+}
+input[type="tel"] {
+    width: 100%;
+    padding: 15px 0 15px 10px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    border: 1px solid rgba(188, 208, 229, 1);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="tel"]::placeholder {
+    color: #888; /* Колір для тексту підказки */
+    font-size: 16px;
+}
