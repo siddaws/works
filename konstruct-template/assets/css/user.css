@@ -1,0 +1,51 @@
+body{
+    background: none;
+}
+h1::before {
+    content: '';
+    width: 100px;
+    height: 8px;
+    display: block;
+    background-color: black;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    
+} 
+h1{
+    margin-bottom: 40px;
+    margin-left: 120px;
+}
+header{
+    position: relative;
+}
+img{
+    vertical-align: top;
+}
+
+.massage{
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    gap: 30px;
+    padding: 0 15px;
+}
+.container{
+    position: relative;
+}
+.massage-item{
+    width: 270px;
+    height: 180px;
+    background-color: #E6E6E6;
+    align-content: center;
+    justify-items: center;
+}
+.massage-item:hover{
+    filter: invert(1);
+    background-color: white;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+.item{
+  
+  
+}

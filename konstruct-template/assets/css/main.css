@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
 body{
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -9,14 +10,18 @@ body{
     font-weight: 400;
     font-size: 28px;
     src: url('../fonts/pt-sans-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-
+    background-image: url('../img/bg-picture.png');
+    background-repeat: no-repeat;
+    background-position: right  top 150px;
+    background-attachment: fixed;
 }
 h2{
     font-family: 'Francois One';
-    font-size: 36px;
+    font-size: 2.3rem;
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 43px;
+   
 }
 ul,li{
     list-style: none;
@@ -37,15 +42,13 @@ img{
 }
 sup {
     font-family: 'Farro';
-    font-size: 19px;
+    font-size: 18px;
     text-transform: none;
     font-weight: 300;
-    margin-left: 26px;
-    position: relative;
-    top: -11px; /* Зміщення вгору */
     
-           
-        
+    position: relative;
+    top: -11px;
+    left: 20px;
 }
 header{
     display: flex;
@@ -54,6 +57,12 @@ header{
     margin-bottom: 85px;
     padding-top: 13px;
     letter-spacing: .7px;
+    position: fixed;
+    top: 0;
+    left: 50%; 
+    width: 1200px;
+    transform: translateX(-50%); 
+    z-index: 1;
     
 }
 header ul {
@@ -64,10 +73,12 @@ nav{
     align-items: center;
 }
 section{
-    margin-bottom: 70px;
+    margin-bottom: 90px;
+    
 }
 .container{
-   width: min(1200px, 90%);
+   width: min(1440px, 90%);
+   
    margin: 0 auto;
 }
 .lang{
@@ -96,4 +107,41 @@ section div
 }
 .gray{
     background: #dadada;
+}
+.container-div nav{
+    width: 385px;
+    margin-left: 10px;
+    position: sticky;
+    top: 80px;
+    margin-right: 19px;
+}
+.container-div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 157px;
+    
+}
+.container-div li {
+    margin-bottom: 70px;
+    border-bottom: 1px #BDBDBD solid;
+    width: 100%;
+}
+.container-div a{
+    font-size: 2.7rem;
+    
+}
+section{
+    position: relative;
+    padding-top: 18px;
+}
+section::before {
+    content: '';
+    width: 100px;
+    height: 8px;
+    display: block;
+    background-color: black;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    
 }
