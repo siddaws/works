@@ -1,0 +1,24 @@
+@import "fonts";
+$color-text: #000000;
+$bg-gray:gray;
+$bg-white:white;
+$btn-blue:#6fcffb;
+$btn-red:#fb8d7b;
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #9789f9;
+    font-family: "Roboto", sans-serif;
+    color: $color-text;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+    letter-spacing: 0.04rem;
+}
+.container{
+    width: min(1200px,90%);
+    margin: 0 auto;
+}
