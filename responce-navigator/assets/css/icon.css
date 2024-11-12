@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pen:before {
+  content: "\e900";
+  color: #4f4f4f;
+}
+.icon-page:before {
+  content: "\e901";
+  color: #4f4f4f;
+}
+.icon-lab:before {
+  content: "\e902";
+  color: #4f4f4f;
+}
+.icon-wallet:before {
+  content: "\e903";
+  color: #4f4f4f;
+}
+.icon-eye:before {
+  content: "\e904";
+  color: #4f4f4f;
+}
+.icon-log-out:before {
+  content: "\e905";
+  color: #4f4f4f;
+}
+.icon-lock:before {
+  content: "\e906";
+  color: #4f4f4f;
+}
+.icon-profile:before {
+  content: "\e907";
+  color: #4f4f4f;
+}
+.icon-location:before {
+  content: "\e908";
+  color: #4f4f4f;
+}
+.icon-stack:before {
+  content: "\e909";
+  color: #4f4f4f;
+}
+.icon-study-1:before {
+  content: "\e90a";
+  color: #4f4f4f;
+}
+.icon-news:before {
+  content: "\e90b";
+  color: #4f4f4f;
+}
+.icon-dashboard:before {
+  content: "\e90c";
+  color: #4f4f4f;
+}
+.icon-icon .path1:before {
+  content: "\e90d";
+  color: rgb(158, 140, 252);
+}
+.icon-icon .path2:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-icon .path3:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-arrow:before {
+  content: "\e910";
+  color: #392c72;
+}
+.icon-mail:before {
+  content: "\e911";
+  color: #4f4f4f;
+}
+.icon-bubble:before {
+  content: "\e912";
+  color: #4f4f4f;
+}
+.icon-calendar:before {
+  content: "\e913";
+  color: #4f4f4f;
+}
+.icon-star:before {
+  content: "\e914";
+  color: #4f4f4f;
+}
+.icon-change-theme:before {
+  content: "\e915";
+  color: #4f4f4f;
+}
+.icon-search:before {
+  content: "\e916";
+  color: #4f4f4f;
+}
+.icon-set:before {
+  content: "\e917";
+  color: #4f4f4f;
+}

@@ -4,21 +4,85 @@ $bg-gray:gray;
 $bg-white:white;
 $btn-blue:#6fcffb;
 $btn-red:#fb8d7b;
-*,*::after,*::before{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-color: #9789f9;
-    font-family: "Roboto", sans-serif;
-    color: $color-text;
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.25rem;
-    letter-spacing: 0.04rem;
+
+
+body {
+  background-color: #9789f9;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.25rem;
+  letter-spacing: 0.04rem;
 }
-.container{
-    width: min(1200px,90%);
-    margin: 0 auto;
+
+main {
+  padding: 120px 0;
 }
+
+.container {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+}
+.price-list{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.price-item{
+    background-color: $bg-gray;
+    flex-grow: 1;
+    box-shadow: 0px 0px 20px 0px #8677ef;
+    text-align: center;
+    padding-top: 40px;
+    &.popular{
+        padding-top: 50px;
+        position: relative;       
+    }
+}
+.circle{
+    position: absolute;
+    top: 16px;
+    right: 30px;
+}
+.price{
+    font-family: 'Bebas Neue';
+    font-size: 3.75rem;
+    font-weight: 100;
+    line-height: 3.75rem;
+    letter-spacing: .3rem;
+    margin-bottom: 24px;
+    sup{
+        position: relative;
+        font-size: 1.5rem;
+        font-weight: 1.5rem;
+    }
+    sub{
+        position: relative;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 16px;
+        letter-spacing: 0.08em;
+    }
+}
+h2{
+    font-family: 'Bebas Neue';
+    font-size: 24px;
+    line-height: 28.13px;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    text-align: center;
+
+}
+// .icon{
+//     width: 64px;
+//     display: flex;
+//     justify-content: center;
+//     padding: 14px;
+// }

@@ -1,0 +1,232 @@
+*,*::after,*::before{
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style-type: none;
+}
+.container{
+    width: min(1170px,90%);
+    margin: 131px auto;
+    
+}
+.header{
+    padding: 0 50px ;
+    margin: 0 auto;
+    width: 450px;
+    position: relative;
+    margin-bottom: 65px;
+    &::before,
+    &::after{
+        content: '';
+        position: absolute;
+        
+        bottom: 9px;
+        width: 210px;
+        height: 1px;
+        background-color: #FFCC00;
+    }
+    &::before{
+        left: 0;
+    }
+    &::after{
+        right: 0;
+    }
+}
+.header-container{
+    
+    .text{
+        font-size: 1.125rem;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    svg{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+}
+body{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    
+}
+h1{
+    font-weight: 900;
+    font-size: 3.75rem;
+    color: #FFCC00;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.main{
+    padding: 65px 0;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,0);
+        height: 560px;
+        width: 1px;
+        background: #FFCC00;
+
+    }
+}
+.section-slider{
+    display: flex;
+    
+}
+.left{
+    position: relative;
+    width: 50%;
+    .wrapper-top
+    {
+        width: 430px;
+        height: 100px;
+        position: absolute;
+        top: -15px; 
+        left: -15px;
+        &::before,
+        &::after{
+            content: '';
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+        }
+        &::before{
+           
+            left: 0;
+            border-left: 1px solid  #FFCC00;
+            border-top:1px solid #ffcc00;
+        }
+        &::after{
+            
+            right: 0;
+            border-right: 1px solid  #FFCC00;
+            border-top:1px solid #ffcc00;
+        }
+    }
+    .wrapper-bottom{
+        width: 430px;
+        height: 100px;
+        position: absolute;
+        bottom: -15px; 
+        left: -15px;
+        &::before,
+        &::after{
+            content: '';
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: 0;
+        }
+        &::before{
+           
+            left: 0;
+            border-left: 1px solid  #FFCC00;
+            border-bottom:1px solid #ffcc00;
+        }
+        &::after{
+            
+            right: 0;
+            border-right: 1px solid  #FFCC00;
+            border-bottom:1px solid #ffcc00;
+        }
+    }
+    
+    
+}
+.right{
+    position: relative;
+    bottom: 7px;
+    width: 50%;
+}
+.description{
+   text-align: center;
+   height: 430px;
+   width: 430px;
+   margin: 0 auto;
+}
+h2{
+    font-size: 2rem;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    position: relative;
+   
+    &::after{
+        content: '';
+        width: 100px;
+        height: 1px;
+        background: #ffcc00;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,0);
+
+    }
+}
+h3{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+svg{
+    width: 30px;
+    height: 30px;
+    fill:#CCCCCC;
+    stroke:#CCCCCC;
+   
+   
+}
+.list-social{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 50px;
+    padding: 0;
+    
+}
+p{
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.bg-yellow{
+    width: 50px;
+    height: 4px;
+    background: repeating-linear-gradient(
+        90deg,             /* Напрямок зліва направо */
+        #ffcc00,           /* Жовтий колір */
+        #ffcc00 10px,
+        white 10px,
+        white 15px,  
+        #ffcc00 15px,     /* Початок білої смуги одразу після жовтої */
+        #ffcc00 35px,
+        white 35px, 
+        white 40px,
+        #ffcc00 40px,
+        #ffcc00 50px      /* Ширина білої смуги */
+    );
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+.btn{
+    padding: 5px 0;
+    width: 118px;
+    border: 1px solid #ffcc00;
+    margin: 0 auto;
+    a{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #666666;
+        
+    }
+}

@@ -1,0 +1,206 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  transition: all .2s ease;
+}
+
+button {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.nav-panel {
+  width: 220px;
+  transition: width .3s ease;
+  box-shadow: #ccc 1px 0 2px 1px;
+  position: fixed;
+  header {
+    padding: 30px 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .logo  {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: #392C72;
+    position: relative;
+    transition: all .3s ease;
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+.logo-name{
+      white-space: nowrap;
+      position: absolute;
+      top: 50%;
+      left: 50px;
+      transform: translateY(-50%);
+      transition: all .2s ease;
+      opacity: 1;
+
+    }
+.toggle-button{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    top: 45%;
+    right: 0;
+    transform: translateY(-50%);
+    i{
+      font-size: 20px;
+      display: inline-block;
+    }
+  }
+
+.menu-label
+{
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  transition: all .2s ease;
+  opacity: 1;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 10px;
+  transition: padding .3s ease;
+  min-height: 46px;
+  overflow: hidden;
+  position: relative;
+  i{
+    font-size: 26px;
+  }
+  &:hover{
+    background-color: #9E8CFC;
+    box-shadow: 0px 0px 20px 0px rgba(158, 140, 252, 0.7);
+    color: white;
+    i::before{
+      color: white;
+    }
+  }
+}
+.nav-panel-group-title{
+  padding: 10px 15px;
+  white-space: nowrap;
+}
+.nav-panel-group{
+  position: relative;
+  
+  .line-between{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    opacity: 0;
+   
+  }
+}
+.nav-closed {
+  .nav-panel {
+    width: 86px;
+  }
+  
+  .menu-label,
+  .logo-name {
+    opacity: 0;
+    left: 30px;
+  }
+
+  .menu-item {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .nav-panel-group-title {
+    opacity: 0;
+  }
+  
+  .logo{
+    padding: 0 12px;
+  }
+  .toggle-button{
+    right: -10px;
+    top: 36px;
+    transform: rotate(180deg);
+  }
+  .line-between{
+    top: 15px;
+    left: 25px;
+    opacity: 1;
+  }
+}
+
+.container{
+  width: min(90%,1170px);
+  margin-left: 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+  padding: 22px 20px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  i{
+    font-size: 26px;
+  }
+   i::hover{
+    color: red;
+  }
+ 
+}
+.quick-panel ul{
+ display: flex;
+ gap: 21px;
+ 
+}
+.quick-setting{
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.lang{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.setting-icon ul{
+  display: flex;
+  gap: 20px;
+}
