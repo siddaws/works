@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/scss/index.min.css">
+    <link rel="stylesheet" href="assets/scss/bootstrap.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="card mt-4">
+                <div class="card-body">
+                  <h5 class="card-title">task1</h5>
+                  <h5 class="card-title">Виконай додавання 0,1 і 0,2 
+                    добийся математично правильної відповіді.</h5>
+                    <h6 class="card-title">
+                        function sum1(){ <br>
+                        const result = (0.1 + 0.2).toFixed(1); '<br>
+                        return console.log(result);<br>
+                        }</h6>
+                   <button type="button" class="btn btn-primary" onclick="sum1()">Відповідь</button>
+                  <div class="card-title" id="result1"></div>
+                 
+                </div>
+            </div>
+            <div class="card mt-4">
+                <div class="card-body">
+                  <h5 class="card-title">task2</h5>
+                  <h5 class="card-title">Виконай додавання рядка "1" і цифри 2
+                     (обидві операнди повинні бути в змінних), 
+                    добийся математично правильної відповіді.</h5>
+                    <h6 class="card-title">
+                        function sum2(){ <br>
+                        const num1 = '1'<br>
+                        const num2 = 2<br>
+                        const result_2 = parseInt(num1) + num2<br>
+                        return document.getElementById('result2').innerText = `${result_2}`<br> 
+                    }</h6>
+                   <button type="button" class="btn btn-primary" onclick="sum2()">Відповідь</button>
+                  <div class="card-title" id="result2"></div>
+                 
+                </div>
+            </div>
+            <div class="card mt-4">
+                <div class="card-body">
+                  <h5 class="card-title">task3</h5>
+                  <h5 class="card-title">Користувач вказує обсяг флешки в Гб. 
+                    Програма повинна порахувати скільки 
+                    файлів розміром в 820 Мб поміщається на флешку.</h5>
+                    <pre class="card-title"><code>
+                        function task3(){
+                            const size = parseFloat(document.getElementById('memory').valueAsNumber)
+                              if(isNaN(size)){
+                             return 'Not a number value'
+                            }
+                            const result_3 = Math.floor(size * 1024 / 820)
+                                 return document.getElementById('result3').innerText = `${result_3}`
+                         
+                         }</code></pre>
+                    <label for="memory">Flash drive size in GB</label>
+                    <input type="number" id="memory">
+                   <button type="button" class="btn btn-primary" onclick="task3()">Відповідь</button>
+                  <div class="card-title" id="result3"></div>
+                 
+                </div>
+            </div>
+            <div class="card mt-4">
+                <div class="card-body">
+                  <h5 class="card-title">task4</h5>
+                  <h5 class="card-title">Користувач вводить суму грошей в гаманці і 
+                    ціну однієї шоколадки. Програма виводить скільки шоколадок може купити користувач 
+                    і скільки здачі у нього залишиться.</h5>
+                    <pre class="card-title"><code>
+                        function task4(){
+                            const price = document.getElementById('price').valueAsNumber
+                            const pricechoco = document.getElementById('pricechoco').valueAsNumber
+                            let count = 0
+                              if(isNaN(price) || isNaN(pricechoco)){
+                               return alert('Not a number value')
+                            }
+                             const surrender = price % pricechoco
+                             count = Math.floor(price / pricechoco)
+                             return document.getElementById('result4').innerText = `Здача: ${surrender} гривень, 
+                             кількість шоколадок ${count} `
+                         
+                         }</code></pre>
+                    <label for="pricechoco">Price choco</label>
+                    <input type="number" id="pricechoco">
+                    <label for="price">Price</label>
+                    <input type="number" id="price">
+                    <button type="button" class="btn btn-primary" onclick="task4()">Відповідь</button>
+                    <div class="card-title" id="result4"></div>
+                 
+                </div>
+            </div>
+            <div class="card mt-4">
+                <div class="card-body">
+                  <h5 class="card-title">task5</h5>
+                  <h5 class="card-title">Запитай у користувача тризначне число і 
+                    виведи його задом наперед. Для вирішення завдання 
+                    тобі знадобиться оператор % (залишок від ділення).</h5>
+                    <pre class="card-title"><code>
+                        function task5(){
+                            let number = document.getElementById('number').valueAsNumber
+                            if(isNaN(number)) return alert('Not a number value')
+                            if (number >= 100 && number <= 999) {
+                            // Отримуємо цифри числа
+                            const hundreds = Math.floor(number / 100); // Сотні
+                            const tens = Math.floor((number % 100) / 10); // Десятки
+                            const units = number % 10; // Одиниці
+                        
+                            // Збираємо число задом наперед
+                            const reversedNumber = units * 100 + tens * 10 + hundreds;
+                        
+                            // Виводимо результат
+                            document.getElementById('result5').innerText = `Число задом наперед: ${reversedNumber}`;
+                            } else {
+                                 return alert("Введіть коректне тризначне число.");
+                            }
+                        }
+                       </code></pre>
+                    <label for="number">Number</label>
+                    <input type="number" id="number">
+                    <button type="button" class="btn btn-primary" onclick="task5()">Відповідь</button>
+                    <div class="card-title" id="result5"></div>
+                 
+                </div>
+            </div>
+            <div class="card mt-4">
+                <div class="card-body">
+                  <h5 class="card-title">task6</h5>
+                  <h5 class="card-title">Користувач вводить суму вкладу в банк на 2 місяці, 
+                    з процентною ставкою депозиту 5% річних. 
+                    Вивести суму нарахованих відсотків.</h5>
+                    <pre class="card-title"><code>
+                       
+                       </code></pre>
+                    <label for="sumUsers">Number</label>
+                    <input type="number" id="sumUsers">
+                    <button type="button" class="btn btn-primary" onclick="task6()">Відповідь</button>
+                    <div class="card-title" id="result6"></div>
+                 
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
